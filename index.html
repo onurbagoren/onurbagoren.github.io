@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Onur Bagoren</title>
+  <meta name="author" content="Onur Bagoren">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/Evil_Eye.svg.png">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="fieldwork.html">Field Work</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li class="nav-icon"><img src="images/Evil_Eye.svg.png" alt="evil eye"></li>
+  </ul>
+</nav>
+
+<table style="width:100%;max-width:980px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr><td style="padding:0px">
+
+    <!-- Bio -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:2.5%;width:63%;vertical-align:middle">
+          <p class="name" style="text-align:center;">Onur Bagoren</p>
+          <!-- <p class="subtitle">Ph.D. Student in Robotics</p> -->
+          <p>
+            Merhaba! I'm a Ph.D. student at the <a href="https://robotics.umich.edu/">University of Michigan</a>, working with
+            <a href="https://robotics.umich.edu/profile/katherine-skinner/">Dr. Katie Skinner</a> at the
+            <a href="https://fieldrobotics.engin.umich.edu/">Field Robotics Group</a>.
+            I'm interested in applying probabilistic learning methods for computer vision and robotics to tasks such as
+            state estimation, mapping, and decision-making in challenging environments.
+          </p>
+          <p>
+            I previously worked at <a href="https://www.irobot.com/">iRobot</a>, and have interned at the
+            <a href="https://www.apl.uw.edu/">University of Washington Applied Physics Lab</a> as a visiting researcher,
+            advised by <a href="https://apl.uw.edu/people/profile.php?last_name=Marburg&first_name=Aaron">Dr. Aaron Marburg</a>.
+          </p>
+          <p style="text-align:center">
+            <a href="mailto:onurbagoren3@gmail.com">Email</a> &nbsp;/&nbsp;
+            <a href="Bagoren_CV.pdf" download>CV</a> &nbsp;/&nbsp;
+            <a href="https://www.linkedin.com/in/onur-bagoren">LinkedIn</a> &nbsp;/&nbsp;
+            <a href="https://github.com/onurbagoren/">GitHub</a> &nbsp;/&nbsp;
+            <a href="https://twitter.com/onurbagoren">Twitter</a>
+          </p>
+        </td>
+        <td style="padding:2.5%;width:37%;max-width:37%">
+          <a href="images/profile.jpg">
+            <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/profile.jpg">
+          </a>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <!-- Research heading + tabs -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr><td style="padding:16px 16px 8px;width:100%;vertical-align:middle">
+        <h2>Research</h2>
+        <p>
+          I'm broadly interested in probabilistic learning for robot perception, particularly underwater. My work spans
+          acoustic and visual sensing, SLAM, neural implicit representations, and uncertainty-aware decision-making.
+        </p>
+        <div class="pub-tabs">
+          <button class="pub-tab active" onclick="showPubs('selected', this)">Selected</button>
+          <button class="pub-tab" onclick="showPubs('all', this)">All</button>
+        </div>
+      </td></tr>
+    </tbody></table>
+
+    <!-- Publications -->
+    <table style="width:100%;border:0px;border-spacing:0px 6px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+      <!-- SurfSLAM (selected) -->
+      <tr class="pub pub-selected">
+        <td style="padding:16px;" class="paper-img">
+          <img src="images/surfslam.png" alt="SurfSLAM">
+        </td>
+        <td style="padding:8px;vertical-align:top">
+          <a href="https://umfieldrobotics.github.io/SurfSLAM/">
+            <span class="papertitle">SurfSLAM: Sim-to-Real Underwater Stereo Reconstruction For Real-Time SLAM</span>
+          </a>
+          <br>
+          <strong>Onur Bagoren*</strong>,
+          <a href="https://sethgi.me/">Seth Isaacson*</a>,
+          <a href="https://sacchinbhg.github.io/">Sacchin Sundar</a>,
+          <a href="https://ycsun2113.github.io/">Yung-Ching Sun</a>,
+          <a href="https://anja-sheppard.github.io/">Anja Sheppard</a>,
+          <a href="https://haoyuma2002814.github.io/">Haoyu Ma</a>,
+          <a href="#">Abrar Shariff</a>,
+          <a href="https://www.roahmlab.com/ram-personal">Ram Vasudevan</a>,
+          <a href="https://robotics.umich.edu/profile/katherine-skinner/">Katherine A. Skinner</a>
+          <br>
+          <em>In Submission</em>
+          <br>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2601.10814" class="pub-link-btn paper">Paper</a>
+            <a href="https://umfieldrobotics.github.io/SurfSLAM/" class="pub-link-btn project">Website</a>
+          </div>
+ <p>A novel real-time SLAM method for underwater navigation.</p>
+        </td>
+      </tr>
+
+      <!-- SonarSplat -->
+      <tr class="pub">
+        <td style="padding:16px;" class="paper-img">
+          <img src="images/sonarsplat.png" alt="SonarSplat">
+        </td>
+        <td style="padding:8px;vertical-align:top">
+          <a href="https://arxiv.org/abs/2504.00159">
+            <span class="papertitle">SonarSplat: Novel View Synthesis of Imaging Sonar via Gaussian Splatting</span>
+          </a>
+          <br>
+          <a href="#">Advaith Sethuraman</a>,
+          <a href="#">Max Rucker</a>,
+          <strong>Onur Bagoren</strong>,
+          <a href="#">Pou-Chun Kung</a>,
+          <a href="#">Nibarkavi N.B. Amutha</a>,
+          <a href="https://robotics.umich.edu/profile/katherine-skinner/">Katherine A. Skinner</a>
+          <br>
+          <em>IEEE Robotics and Automation Letters (RA-L)</em>, 2025
+          <br>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2504.00159" class="pub-link-btn paper">Paper</a>
+          </div>
+          <p>Extending 3D Gaussian Splatting to imaging sonars to enable novel-view synthesis and 3D reconstruction from sonar images.</p>
+        </td>
+      </tr>
+
+      <!-- PUGS (selected) -->
+      <tr class="pub pub-selected">
+        <td style="padding:16px;" class="paper-img">
+          <img src="images/pugs.png" alt="PUGS">
+        </td>
+        <td style="padding:8px;vertical-align:top">
+          <a href="https://onurbagoren.github.io/PUGS/">
+            <span class="papertitle">PUGS: Perceptual Uncertainty for Grasp Selection in Underwater Environments</span>
+          </a>
+          <br>
+          <strong>Onur Bagoren</strong>,
+          <a href="#">Marc Micatka</a>,
+          <a href="https://robotics.umich.edu/profile/katherine-skinner/">Katherine A. Skinner</a>,
+          <a href="https://apl.uw.edu/people/profile.php?last_name=Marburg&first_name=Aaron">Aaron Marburg</a>
+          <br>
+          <em>ICRA</em>, 2025
+          <br>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2502.09824" class="pub-link-btn paper">Paper</a>
+            <a href="https://onurbagoren.github.io/PUGS/" class="pub-link-btn project">Website</a>
+          </div>
+ <p>Modeling perceptual uncertainty over object geometry to guide grasp selection for underwater manipulation, enabling more robust grasping in visually challenging marine scenes.</p>
+        </td>
+      </tr>
+
+      <!-- VAIR -->
+      <tr class="pub">
+        <td style="padding:16px;" class="paper-img">
+          <img src="images/vair.gif" alt="VAIR">
+        </td>
+        <td style="padding:8px;vertical-align:top">
+          <a href="https://umfieldrobotics.github.io/VAIR_site/">
+            <span class="papertitle">VAIR: Visuo-Acoustic Implicit Representations for Low-Cost, Multi-Modal Transparent Surface Reconstruction</span>
+          </a>
+          <br>
+          <a href="#">Advaith V. Sethuraman*</a>,
+          <strong>Onur Bagoren*</strong>,
+          <a href="#">Harikrishnan Seetharaman</a>,
+          <a href="#">Dalton Richardson</a>,
+          <a href="#">Joseph Taylor</a>,
+          <a href="https://robotics.umich.edu/profile/katherine-skinner/">Katherine A. Skinner</a>
+          <br>
+          <em>ICRA</em>, 2025
+          <br>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2411.04963" class="pub-link-btn paper">Paper</a>
+            <a href="https://umfieldrobotics.github.io/VAIR_site/" class="pub-link-btn project">Website</a>
+            <a href="https://drive.google.com/drive/folders/12tKM39P_SxaSs6i_YaB21g3Y7NR_1J_d?usp=sharing" class="pub-link-btn dataset">Dataset</a>
+          </div>
+ <p>Coupling low-cost acoustic sensing with visual measurements inside a generative neural implicit representation to reconstruct transparent surfaces.</p>
+        </td>
+      </tr>
+
+      <!-- OceanSim -->
+      <tr class="pub">
+        <td style="padding:16px;" class="paper-img">
+          <img src="images/oceansim.png" alt="OceanSim">
+        </td>
+        <td style="padding:8px;vertical-align:top">
+          <a href="https://umfieldrobotics.github.io/OceanSim/">
+            <span class="papertitle">OceanSim: A GPU-Accelerated Underwater Robot Perception Simulation Framework</span>
+          </a>
+          <br>
+          <a href="#">Jingyu Song</a>,
+          <a href="#">Haoyu Ma</a>,
+          <strong>Onur Bagoren</strong>,
+          <a href="#">Advaith Sethuraman</a>,
+          <a href="#">Yiting Zhang</a>,
+          <a href="https://robotics.umich.edu/profile/katherine-skinner/">Katherine A. Skinner</a>
+          <br>
+          <em>IROS</em>, 2025
+          <br>
+          <div class="pub-links">
+            <a href="https://www.arxiv.org/abs/2503.01074" class="pub-link-btn paper">Paper</a>
+            <a href="https://umfieldrobotics.github.io/OceanSim/" class="pub-link-btn project">Website</a>
+          </div>
+ <p>A GPU-accelerated simulation framework providing realistic sonar, camera, and sensor rendering for developing and benchmarking underwater robot perception algorithms at scale.</p>
+        </td>
+      </tr>
+
+      <!-- TURTLMap (selected) -->
+      <tr class="pub pub-selected">
+        <td style="padding:16px;" class="paper-img">
+          <img src="images/turtlmap.gif" alt="TURTLMap">
+        </td>
+        <td style="padding:8px;vertical-align:top">
+          <a href="https://umfieldrobotics.github.io/TURTLMap/">
+            <span class="papertitle">TURTLMap: Real-time Localization and Dense Mapping of Low-texture Underwater Environments</span>
+          </a>
+          <br>
+          <a href="#">Jingyu Song*</a>,
+          <strong>Onur Bagoren*</strong>,
+          <a href="#">Razan Adigani</a>,
+          <a href="#">Advaith V. Sethuraman</a>,
+          <a href="https://robotics.umich.edu/profile/katherine-skinner/">Katherine A. Skinner</a>
+          <br>
+          <em>IROS</em>, 2024
+          <br>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2408.01569" class="pub-link-btn paper">Paper</a>
+            <a href="https://umfieldrobotics.github.io/TURTLMap/" class="pub-link-btn project">Website</a>
+          </div>
+ <p>Real-time dense mapping and localization in featureless underwater environments on a low-cost UUV, combining stereo vision with probabilistic fusion.</p>
+        </td>
+      </tr>
+
+      <!-- Shipwreck -->
+      <tr class="pub">
+        <td style="padding:16px;" class="paper-img">
+          <img src="images/shipwreck.png" alt="Shipwreck segmentation">
+        </td>
+        <td style="padding:8px;vertical-align:top">
+          <a href="https://journals.sagepub.com/doi/10.1177/02783649241266853">
+            <span class="papertitle">Machine Learning for Shipwreck Segmentation from Side Scan Sonar Imagery: Dataset and Benchmark</span>
+          </a>
+          <br>
+          <a href="#">Advaith V. Sethuraman</a>,
+          <a href="#">Anja Sheppard</a>,
+          <strong>Onur Bagoren</strong>,
+          <a href="#">Christopher Pinnow</a>,
+          <a href="#">Jamey Anderson</a>,
+          <a href="#">Timothy C. Havens</a>,
+          <a href="https://robotics.umich.edu/profile/katherine-skinner/">Katherine A. Skinner</a>
+          <br>
+          <em>International Journal of Robotics Research</em>, 2024
+          <br>
+          <div class="pub-links">
+            <a href="https://journals.sagepub.com/doi/10.1177/02783649241266853" class="pub-link-btn paper">Paper</a>
+            <a href="https://umfieldrobotics.github.io/ai4shipwrecks/" class="pub-link-btn project">Website</a>
+          </div>
+ <p>A dataset and benchmark of side scan sonar imagery for shipwreck segmentation, enabling systematic evaluation of ML methods for underwater archaeological and search tasks.</p>
+        </td>
+      </tr>
+
+      <!-- OCEANS 2023 -->
+      <tr class="pub">
+        <td style="padding:16px;" class="paper-img">
+          <img src="images/oceans2023.png" alt="OCEANS 2023">
+        </td>
+        <td style="padding:8px;vertical-align:top">
+          <a href="https://ieeexplore.ieee.org/document/10244679">
+            <span class="papertitle">Uncertainty-Aware Acoustic Localization and Mapping for Underwater Robots</span>
+          </a>
+          <br>
+          <a href="#">Jingyu Song*</a>,
+          <strong>Onur Bagoren*</strong>,
+          <a href="https://robotics.umich.edu/profile/katherine-skinner/">Katherine A. Skinner</a>
+          <br>
+          <em>OCEANS</em>, 2023
+          <br>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/document/10244679" class="pub-link-btn paper">Paper</a>
+            <a href="https://umfieldrobotics.github.io/PUMA.github.io/" class="pub-link-btn project">Website</a>
+          </div>
+ <p>An uncertainty-aware probabilistic framework for acoustic localization and mapping that explicitly reasons about sensor noise and model uncertainty in GPS-denied underwater environments.</p>
+        </td>
+      </tr>
+
+    </tbody></table>
+
+    <!-- Footer -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr><td class="footer-cell">Design adapted from <a href="https://jonbarron.info/">Jon Barron's website</a>.</td></tr>
+    </tbody></table>
+
+  </td></tr>
+</tbody></table>
+
+<script>
+  function showPubs(mode, btn) {
+    document.querySelectorAll('.pub-tab').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    document.querySelectorAll('tr.pub').forEach(function(row) {
+      row.style.display = (mode === 'all' || row.classList.contains('pub-selected')) ? '' : 'none';
+    });
+  }
+  showPubs('selected', document.querySelector('.pub-tab.active'));
+</script>
+
+</body>
+</html>
