@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>News – Onur Bagoren</title>
+  <meta name="author" content="Onur Bagoren">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/Evil_Eye.svg.png">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.html" class="active">News</a></li>
+    <li><a href="fieldwork.html">Field Work</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li class="nav-icon"><img src="images/Evil_Eye.svg.png" alt="evil eye"></li>
+  </ul>
+</nav>
+
+<table style="width:100%;max-width:980px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <tr><td style="padding:0px">
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr><td class="section-pad" style="width:100%;vertical-align:middle">
+        <h2>News</h2>
+      </td></tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr><td style="padding:0 24px 24px">
+        <ul class="news-list news-page" id="all-news"></ul>
+      </td></tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr><td class="footer-cell">Design adapted from <a href="https://jonbarron.info/">Jon Barron's website</a>.</td></tr>
+    </tbody></table>
+
+  </td></tr>
+</tbody></table>
+
+<script src="news.js"></script>
+<script>
+  var list = document.getElementById('all-news');
+  NEWS_ITEMS.forEach(function(item) {
+    var li = document.createElement('li');
+    li.className = 'news-item';
+    li.innerHTML = '<span class="news-date">' + item.dateLabel + '</span>'
+                 + '<span class="news-text">' + item.html + '</span>';
+    list.appendChild(li);
+  });
+</script>
+
+</body>
+</html>

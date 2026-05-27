@@ -13,6 +13,7 @@
 <nav>
   <ul>
     <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="news.html">News</a></li>
     <li><a href="fieldwork.html">Field Work</a></li>
     <li><a href="cv.html">CV</a></li>
     <li class="nav-icon"><img src="images/Evil_Eye.svg.png" alt="evil eye"></li>
@@ -55,6 +56,19 @@
           </a>
         </td>
       </tr>
+    </tbody></table>
+
+    <!-- News preview -->
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr><td style="padding:12px 16px 2px;width:100%;vertical-align:middle">
+        <h2>News</h2>
+      </td></tr>
+    </tbody></table>
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr><td style="padding:0 16px 10px">
+        <ul class="news-list" id="homepage-news"></ul>
+        <a href="news.html" class="news-see-all">See all news &rarr;</a>
+      </td></tr>
     </tbody></table>
 
     <!-- Research heading + tabs -->
@@ -298,6 +312,20 @@
 
   </td></tr>
 </tbody></table>
+
+<script src="news.js"></script>
+<script>
+  (function() {
+    var list = document.getElementById('homepage-news');
+    NEWS_ITEMS.slice(0, 3).forEach(function(item) {
+      var li = document.createElement('li');
+      li.className = 'news-item';
+      li.innerHTML = '<span class="news-date">' + item.dateLabel + '</span>'
+                   + '<span class="news-text">' + item.html + '</span>';
+      list.appendChild(li);
+    });
+  })();
+</script>
 
 <script>
   function showPubs(mode, btn) {
