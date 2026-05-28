@@ -275,6 +275,7 @@ tr.pub td:last-child p {
 .pub-link-btn.arxiv { color: #6c8480; }
 .pub-link-btn.paper { color: #6c8480; }
 .pub-link-btn.dataset { color: #7b9669; }
+.pub-link-btn.code    { color: #404e3b; }
 
 @media (max-width: 640px) {
   .pub-links {
