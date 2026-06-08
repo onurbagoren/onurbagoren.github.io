@@ -550,5 +550,44 @@ tr.pub td:last-child p {
   padding: 13px 0;
 }
 
+/* ── Social links ───────────────────────────────────────── */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin: 14px 0 4px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--link);
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  transition: color 0.15s ease;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--link-hover);
+  font-weight: 400;
+}
+
+.social-icon {
+  width: 11px;
+  height: 11px;
+  min-width: 11px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .social-links {
+    gap: 10px 16px;
+  }
+}
+
 /* ── Misc ───────────────────────────────────────────────── */
 span.highlight { background-color: var(--accent-pale); }
