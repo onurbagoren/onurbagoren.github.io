@@ -372,6 +372,38 @@ tr.pub td:last-child p {
   line-height: 1.5;
 }
 
+.service-list {
+  padding-left: 4px;
+  line-height: 2;
+}
+
+.service-entry {
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+}
+
+.service-label {
+  flex: 0 0 175px;
+  color: #0e7490;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.service-label::after {
+  content: ":";
+}
+
+.service-detail {
+  min-width: 0;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.service-detail a {
+  font-size: inherit;
+}
+
 .cv-download-wrap {
   padding: 8px 32px 32px;
 }
