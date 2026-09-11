@@ -2,6 +2,10 @@
 // Each item: { dateLabel, html }
 const NEWS_ITEMS = [
   {
+    dateLabel: "Sep 2026",
+    html: "I received the <a href=\"https://beyster.engin.umich.edu/fellows-program/\">Beyster Fellows Program</a> fellowship."
+  },
+  {
     dateLabel: "Jun 2026",
     html: "I'll be working with <a href=\"https://www.mbari.org/person/giancarlo-troni/\">Dr. Giancarlo Troni</a> and the <a href=\"https://www.mbari.org/team/compas-lab-control-modeling-and-perception-of-autonomous-systems-laboratory/\">CoMPAS Lab</a> at MBARI over the Summer of 2026."
   },

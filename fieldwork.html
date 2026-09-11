@@ -20,7 +20,7 @@
   </ul>
 </nav>
 
-<table style="width:100%;max-width:980px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<table style="width:100%;max-width:840px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
   <tr><td style="padding:0px">
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -34,14 +34,13 @@
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr><td style="padding:0px 16px 24px;">
-        <div class="fieldwork-grid">
-          <img src="images/fieldwork/IMG_7467.PNG" alt="TURTLBot deployment">
-          <img src="images/fieldwork/IMG_0053.jpeg" alt="Lake deployment">
-          <img src="images/fieldwork/IMG_7466.PNG" alt="TURTLBot deployment">
-         
-          <!-- <div style="padding:32px;background:#f5f5f5;color:#999;text-align:center;border-radius:4px;grid-column:1/-1;">
-            Field work photos coming soon.
-          </div> -->
+        <div class="fieldwork-carousel" aria-label="Field work photos">
+          <img id="fieldwork-photo" src="images/fieldwork/mbari_field_work.PNG" alt="MBARI field work">
+          <button class="fieldwork-arrow fieldwork-arrow-prev" type="button" aria-label="Previous field work photo">&lsaquo;</button>
+          <button class="fieldwork-arrow fieldwork-arrow-next" type="button" aria-label="Next field work photo">&rsaquo;</button>
+          <div id="fieldwork-caption" class="fieldwork-caption">
+            At the Portuguese Ledge with ROV Ventana on R/V Rachel Carson with Dr. Giancarlo Troni and <a href="https://alepuglisi.github.io/">Alessandro Puglisi</a>
+          </div>
         </div>
       </td></tr>
     </tbody></table>
@@ -52,5 +51,41 @@
 
   </td></tr>
 </tbody></table>
+<script>
+  var fieldworkPhotos = [
+    {
+      src: 'images/fieldwork/mbari_field_work.PNG',
+      alt: 'MBARI field work',
+      caption: 'Posing with ROV Ventana on R/V Rachel Carson with Dr. Giancarlo Troni and <a href="https://alepuglisi.github.io/">Alessandro Puglisi</a>'
+    },
+    {
+      src: 'images/fieldwork/IMG_7467.PNG',
+      alt: 'Before sending Ponyo into Lake Huron',
+      caption: 'Before sending Ponyo into Lake Huron'
+    },
+    {
+      src: 'images/fieldwork/IMG_7466.PNG',
+      alt: 'Preparing lab robots Ponyo and Guppy for the field',
+      caption: 'Preparing our lab robots, Ponyo and Guppy for the field'
+    }
+  ];
+  var fieldworkIndex = 0;
+  var fieldworkPhoto = document.getElementById('fieldwork-photo');
+  var fieldworkCaption = document.getElementById('fieldwork-caption');
+
+  function showFieldworkPhoto(direction) {
+    fieldworkIndex = (fieldworkIndex + direction + fieldworkPhotos.length) % fieldworkPhotos.length;
+    fieldworkPhoto.src = fieldworkPhotos[fieldworkIndex].src;
+    fieldworkPhoto.alt = fieldworkPhotos[fieldworkIndex].alt;
+    fieldworkCaption.innerHTML = fieldworkPhotos[fieldworkIndex].caption;
+  }
+
+  document.querySelector('.fieldwork-arrow-prev').addEventListener('click', function() {
+    showFieldworkPhoto(-1);
+  });
+  document.querySelector('.fieldwork-arrow-next').addEventListener('click', function() {
+    showFieldworkPhoto(1);
+  });
+</script>
 </body>
 </html>
