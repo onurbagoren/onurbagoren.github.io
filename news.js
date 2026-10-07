@@ -2,6 +2,14 @@
 // Each item: { dateLabel, html }
 const NEWS_ITEMS = [
   {
+    dateLabel: "Oct 2026",
+    html: "I gave a talk on <a href=\"https://www.arxiv.org/abs/2503.01074\">OceanSim</a> at the OCEANS 2026 workshop <a href=\"https://oceansim.bbingham.dev/\">&ldquo;Multi-Domain Open Simulation for Ocean Robotics&rdquo;</a>."
+  },
+  {
+    dateLabel: "Oct 2026",
+    html: "I was an invited speaker at the IROS 2026 <a href=\"https://www.marinerobotics.info/\">Workshop on Perception and Navigation for Marine Robotics</a>, where I gave a talk on <a href=\"https://lnkd.in/p/gA5PM3fE\">&ldquo;Adaptive Marine Perception Under Sensor Degradation&rdquo;</a>."
+  },
+  {
     dateLabel: "Sep 2026",
     html: "I received the <a href=\"https://beyster.engin.umich.edu/fellows-program/\">Beyster Fellows Program</a> fellowship."
   },
